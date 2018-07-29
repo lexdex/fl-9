@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+   <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          
+          <img src="logo.png" alt="Epam_logo"> 
+ 
+            <header>
+               <h1 id="Home">
+                <b>HTML Elements</b>
+               </h1>
+            </header>    
+
+ 
+  <hr>
+     <div>
+       <a href="#Home"><b> Home</b> </a>&nbsp;&nbsp;
+       <a href="#Headers"><b> Headers</b></a>&nbsp;&nbsp;
+       <a href="#Table"><b> Table</b> </a>&nbsp;&nbsp;
+       <a href="#List"><b> List</b></a>&nbsp;&nbsp;
+       <a href="#Textformats"><b> Text formats</b></a>&nbsp;&nbsp;
+        <a href="#Blockquotes"><b> Blockquotes</b></a>
+      </div>
+ 
+   <hr>
+
+Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header
+
+ <br>
+ <br>      
+ 
+                <h2 id="Headers">Header 2</h2>
+                <h3>Header 3</h3>
+                <h4>Header 4</h4>
+                <h5>Header 5</h5>
+                <h6>Header 6</h6>
+            
+
+<h2>Table</h2>
+<table id="Table">
+   <tr>
+    <th>Header</th>
+    <th>Header</th>
+    <th>Header</th>
+  </tr>
+<tr>
+    <td><strong>Strong</strong></td>
+    <td>CO<sub>2</sub></td> 
+    <td><a href="#">Some link</a></td>
+</tr>
+<tr>
+    <td><i>Italic</i></td>
+    <td><abbr>Abbreviation</abbr></td>
+    <td><del>Delete</del></td>
+</tr>
+<tr>
+
+    <td><u>Underline</u></td>
+    <td>5<sup>3</sup>=125</td>
+    <td><ins>Inserted</ins></td>
+</tr>
+</table>
+
+
+<h2 id="List">Unordered List</h2>
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+      <ul>
+         <li>
+             Some nested list item 1
+         </li>
+      </ul>
+    
+    <li>List item 3</li>
+</ul>
+
+  <h2>Ordered List</h2>
+ 
+<ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+      <ol>
+          <li>
+             Some nested list item 1
+          </li>
+      </ol>
+    <li>List item 3</li>
+</ol>
+
+<h3>Definition List</h3>
+  
+<dl> 
+  <dt></dt>
+   <dd>      
+     <b>defines terms 1</b>
+   <br>
+   description 1
+   <br>
+   <br>
+   <b>defines terms 2</b>
+   <br>
+   description 2
+   </dd>
+</dl>
+     
+<h2>Details</h2>
+
+<details open>
+     <summary>Some details element (open)</summary>
+      Here are more details about the details.
+ </details>
+ <details>
+    <summary>Some details element (close)</summary>
+   Here are more details about the details.
+
+</details>
+<hr>
+
+<h2 id="Textformats">Text formats</h2>
+
+<h3>Article Text</h3>
+   
+<article>
+   
+    <h2>Article title</h2>
+Article description
+
+</article>
+<br>
+     <h3>Preformatted Text</h3>
+<pre>
+Text 
+  in a <b>pre</b> element 
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+</pre>
+<br>
+
+    <h3>Code</h3>
+
+<br>
+<code>
+.wrapper {<br>
+display: flex;<br>
+  vertical-align: middle;<br>
+  justify-content: center;<br>
+ }<br> 
+</code>
+<br>
+<br>
+
+<h3 id="Blockquotes">Blockquotes</h3>
+Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
+<br>
+<br>
+  <i>
+  <blockquote>
+   
+"If you go back a few hundred years, what we take for granted today would seem like magic-being able to<br> talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. <br>
+These are all things that would have been considered magic a few hundred years ago."
+<br> <a  href="#Home">Elon Musk</a>
+    </blockquote>      
+    </i>
+
+<footer>© Copyright Epam Systems</footer>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</body>
+
+</html>
