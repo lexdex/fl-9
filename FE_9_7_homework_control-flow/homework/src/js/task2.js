@@ -1,0 +1,1 @@
+window.confirm("Do you want to play a game?");
