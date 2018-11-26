@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="root">
+    <div class="startBlock">
+      <header>
+        <h1>Simple TODO application</h1>
+      </header>
+
+      <div class = "addNewEventBox">
+        <button class = "addNewPage" >Add new task </button>
+      </div>
+      <div class = "listBoxContainer">
+        <ul class = "listBox">
+        </ul>
+      </div>
+    </div>
+    <div class = "hideBlock">
+      <section class = "addPage" >
+        <h2 class="todoHead">Add task</h2>
+        <input type="text" class = "addNewEvent">
+        <div class="container">
+          <button class="cancelBtn">Cancel</button>
+          <button class="addBtn" disabled="">Save Changes</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>

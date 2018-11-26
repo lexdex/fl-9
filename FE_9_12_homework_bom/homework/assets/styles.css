@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .addPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 100px auto;  
+    width: 400px;
+    padding: 10px;
+  }
+  .hideBlock {
+    display: none;
+  }
+  
+  
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+#root {
+    display: flex;
+    justify-content: center;
+}
+.startBlock {
+    width: 45%;
+    height: 500px;
+    margin-top: 5%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.addNewEventBox{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 40px;
+    margin-top:10px;
+    margin-bottom: 15px;
+   
+}
+.addNewEvent{
+    width: 85%;
+    height: 24px;
+    border: 1.5px solid black;
+}
+button {
+    font-size: 1.3em;
+    border: 2px solid black;
+    background: white;
+    padding: 2px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.listBoxContainer {
+    height: 400px;
+    width: 100%;
+    vertical-align: center;
+}
+.listBoxContainer button {
+    border: 0;
+    background: white;
+    padding: 0;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.listBox-item {
+    list-style-type: none;
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+.deleteIconBtn {
+    margin-left: auto;
+}
+.checkIconBtn,
+.deleteIconBtn {
+    padding: 0;
+    height: 36px;
+}
+.container {
+    display: flex;
+    width: 323px;
+    justify-content: space-between;
+}
+.cancelBtn, .addBtn {
+    width: 160px;
+}
+.todoHead {
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
