@@ -1,0 +1,191 @@
+body{
+    background-color:$mainBGC;
+    font-family: $mainFont;
+    .main-wrapper {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .logo{
+            img{
+                width: 80%;
+                height: 110%;
+            }
+        }
+
+        nav
+        {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+            height:70px;
+            width:55%;
+            font-size: 1.5em;
+            border-top:1.5px solid $borderLine;
+            border-bottom:1.5px solid $borderLine;
+            justify-content: space-around;
+            align-self: flex-end;
+            text-transform: uppercase;
+
+            a{
+                color:$mainColor;
+                text-decoration: none;
+                &:hover{
+                    transition-delay: .2s;
+                    background-color: lighten($mainColor, 10%);
+                    color:darken($mainColor, 20%);
+                }
+                &:active{
+                    color:lighten($mainColor, 20%);
+                    transform: translateY(2px);
+                    background-color: darken($mainColor, 20%);
+                }
+             }
+        }
+
+
+    }
+    .toolbar {
+        align-self: flex-end;
+        margin-top: 60px;
+        input{
+            background-color: $mainBGC;
+            border: 1.5px solid $mainColor;
+            height: 30px;
+            margin-bottom: 30px;
+            font-size:1.1em;
+            
+            &::placeholder 
+            {  
+                 color: $mainColor; 
+            }
+        }
+    }
+
+    .post-list
+    {
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        article {
+            align-self: flex-start;
+            background-color: $arcticleBG;
+            width: 49%;
+            padding:8px 8px 0 8px;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+            img {
+                margin: auto;
+                width: 100%;
+                
+            }
+            .post-description{
+                padding-left:15px;
+                color:$postDescC;
+                font-size:.9em;
+            }
+            h3{
+                
+                text-transform: uppercase;
+                color:$h3Color;
+                border-top: 1.3px solid $borderLine;
+                padding-top:5px;
+            }
+            p{
+                font-size:$fontSizeP;
+                line-height: 1.8em;
+                margin-bottom: 10px;
+                color:$pColor;
+            }
+
+            &:nth-last-child(1) {
+                align-self: auto;
+            }
+           
+
+        }
+    }
+    #about
+    {
+        h1{
+            text-align: right;
+            text-transform: uppercase;
+            color:$mainColor;
+            padding-bottom:0px;
+            margin-top:50px;
+        }
+        p{
+            line-height: 1.4em;
+            color:$aboutColor;
+        }
+        img{
+            max-width: 100%;
+        }
+
+    }
+    #contact{
+        h1,h4{
+            text-align: right;
+            text-transform: uppercase;    
+            color:$mainColor;
+            padding-bottom:0px;
+        }
+        h1{
+            margin-top:60px;
+        }
+
+        form{
+            input:not(#submit),
+            textarea
+            {
+                box-sizing: border-box;
+                background-color:$mainBGC;
+                width: 100%;
+                padding:10px 0 10px 15px;
+                margin-bottom: 10px;
+                border: 1px solid $borderLine;
+                font-family: $mainFont;
+            }
+            #submit{
+                float: right;
+                margin-top: 35px;
+                width: 20%;
+                height: 40px;
+                text-transform: uppercase;
+                color: #f1f1f1;
+                font-size:1.3em;
+                background-color: $mainColor;
+                border: none;
+                
+                &:hover{
+                    transition-delay: .2s;
+                    background-color: darken($mainColor, 20%);
+                    box-shadow: 1px 2px 2px 2px rgba(0,0,0,.8);
+                }
+                &:active{
+                    transform: translateY(2px);
+                    background-color: lighten($mainColor, 10%);
+                }
+
+            }
+
+        }
+
+    }
+
+    footer{
+        color:$pColor;
+        font-size: 0.9em;
+    
+    }
+}
